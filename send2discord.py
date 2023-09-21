@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Created on Wed Sep 20 14:26:54 2023
 
@@ -28,8 +29,9 @@ for command in commands:
     # Debugging line to show the command being processed
     print(f"Processing command: {command}")  
     pyperclip.copy(command)  # Copy the command to the clipboard
-    pyautogui.hotkey('ctrl', 'v')  # Paste the command
+    pyautogui.hotkey('command', 'v')  # Paste the command
     pyautogui.press('enter')  # Press the 'enter' key to send the message
     time.sleep(delay)  # Wait for the specified delay before sending the next command
 
 print("All commands have been sent.")
+
