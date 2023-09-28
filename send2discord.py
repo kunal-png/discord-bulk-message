@@ -30,7 +30,9 @@ for command in commands:
     print(f"Processing command: {command}")  
     pyperclip.copy(command)  # Copy the command to the clipboard
     pyautogui.hotkey('command', 'v')  # Paste the command
+    time.sleep(2)
     pyautogui.press('enter')  # Press the 'enter' key to send the message
+    
     time.sleep(delay)  # Wait for the specified delay before sending the next command
 
 print("All commands have been sent.")
